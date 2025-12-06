@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo Privado - LAC20025</title>
+    <style>
+        body {
+            background-color: #C2858C; /* Mismo fondo */
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contenedor-blanco {
+            background-color: rgba(255, 255, 255, 0.9); /* Blanco un poco transparente */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 { color: #333; }
+
+        /* Estilo de la galería de fotos */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .foto {
+            width: 200px;
+            height: 200px;
+            background-color: #ddd; /* Color gris mientras no hay foto */
+            border-radius: 10px;
+            overflow: hidden;
+            border: 3px solid white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Para que la foto no se estire feo */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-blanco">
+        <h2>HOLA PRINCESA...</h2>
+        <p>.</p>
+
+        <div class="galeria">
+            
+            <div class="foto">
+                <img src="foto1.jpg" alt="Foto 1"> 
+            </div>
+
+            <div class="foto">
+                <img src="foto2.jpg" alt="Foto 2">
+            </div>
+
+            <div class="foto">
+                <img src="foto3.jpg" alt="Foto 3">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
